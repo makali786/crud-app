@@ -23,10 +23,7 @@ function Edit() {
 				e_email: email,
 			})
 			.then(() => {
-				localStorage.setItem("id", null);
-				localStorage.setItem("name", null);
-				localStorage.setItem("age", null);
-				localStorage.setItem("email", null);
+				localStorage.clear();
 				navigate("/");
 			})
 			.catch(() => {
